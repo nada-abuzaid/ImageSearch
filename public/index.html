@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Readex+Pro:wght@200;300;400;500;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="https://k.top4top.io/p_2245gprve1.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h6><span class="load">Loading...</span></h6>
+    <div class="wrap-title">
+      <h1 class="title"><a href="/">Image Search</a></h1>
+      <div class="wrap-check">
+        <input type="checkbox" id="themes">
+        <label for="themes" id="themesLabel">Light</label>
+      </div>
+    </div>
+    <div class="form">
+      <div class="wrap">
+        <input type="search" id="searchInput" name="search" placeholder="Search what's on your mind.." required />
+        <ul id="autoList">
+        </ul>
+      </div>
+      <input type="submit" id="searchBtn" value="Search" />
+    </div>
+    <section class="tags">
+      <div class="tag">Editorial</div>
+      <div class="tag">Entrepreneur</div>
+      <div class="tag">Arts</div>
+      <div class="tag">Wallpapers</div>
+      <div class="tag">Experimental</div>
+      <div class="tag">Nature</div>
+      <div class="tag">Fashion</div>
+      <div class="tag">Food</div>
+      <div class="tag">Film</div>
+    </section>
+    <main class="content-wrap">
+      <ul id="imageListWrap">
+      </ul>
+    </main>
+    <div id="scrollToTopBtn" class="btn-scroll hide">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 9L12.7071 8.29289L12 7.58579L11.2929 8.29289L12 9ZM18.7071 14.2929L12.7071 8.29289L11.2929 9.70711L17.2929 15.7071L18.7071 14.2929ZM11.2929 8.29289L5.29289 14.2929L6.70711 15.7071L12.7071 9.70711L11.2929 8.29289Z" fill="#CCD2E3"/>
+        </svg>
+    </div>
+    <div id="stateInternet" class="stateInternet hide"></div>
+  </div>
+  <script src="js/getData.js"></script>
+  <script src="js/dom.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
